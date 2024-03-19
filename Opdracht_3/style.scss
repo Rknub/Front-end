@@ -1,0 +1,90 @@
+/* Variabelen */
+$font-family: Arial, sans-serif;
+$header-bg-color: #333;
+$header-text-color: #fff;
+$main-bg-color: #f4f4f4;
+$footer-bg-color: #333;
+$footer-text-color: #fff;
+
+/* Globale stijlen */
+body {
+    font-family: $font-family;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: $header-bg-color;
+    color: $header-text-color;
+    padding: 20px;
+
+    h1 {
+        margin: 0;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            display: inline;
+            margin-right: 20px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                color: $header-text-color;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+/* Main */
+main {
+    padding: 20px;
+
+    section {
+        background-color: $main-bg-color;
+        padding: 20px;
+        margin-bottom: 20px;
+
+        h2 {
+            margin-top: 0;
+        }
+    }
+}
+
+/* Footer */
+footer {
+    background-color: $footer-bg-color;
+    color: $footer-text-color;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;    
+
+    @media screen and (max-width: 768px) {
+        text-align: center;
+    }
+}
+
+/* Media queries voor responsive design */
+@media screen and (max-width: 768px) {
+    header {
+        text-align: center;
+
+        nav ul li {
+            display: block;
+            margin: 10px 0;
+        }
+    }
+}
+
+@import "output.css";
