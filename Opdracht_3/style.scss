@@ -25,10 +25,11 @@ header {
 
 main {
     padding: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
+    display: grid; /* Verander display naar grid */
+    grid-template-columns: repeat(2, 1fr); /* Maak twee kolommen van gelijke breedte */
+    gap: 20px; /* Voeg een afstand toe tussen de secties */
+  }
+  
 
 .container {
     background-color: #fff;

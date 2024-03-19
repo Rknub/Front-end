@@ -16,27 +16,17 @@ header {
 
 main {
   padding: 40px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr)); /* Twee kolommen van gelijke breedte */
+  gap: 20px; /* Afstand tussen de secties */
 }
 
-.container {
+section {
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
 }
 
-section {
-  flex-basis: calc(33.33% - 20px);
-}
-
-#contact,
-#skills {
-  flex-basis: calc(50% - 20px);
-  margin-bottom: 0;
-}
 
 /*# sourceMappingURL=style.css.map */
